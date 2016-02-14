@@ -6,7 +6,7 @@ header {
     min-height: 900px;
     background: transparent;
     width: 100%;
-
+}
 footer {
     color: rgba(0,0,0, 0.7);
     padding: 8px 0 8px 0;
@@ -14,4 +14,11 @@ footer {
     clear: both;
     border-top: 1px solid rgba(0,0,0, 0.1);
     text-align: center;
+}
+
+.top-right {
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    padding-right: 5px;
 }
