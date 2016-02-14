@@ -16,3 +16,10 @@ footer {
     border-top: 1px solid rgba(0,0,0, 0.1);
     text-align: center;
 }
+
+.top-right {
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    padding-right: 5px;
+}
