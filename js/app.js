@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  if($(window).width() > 700) {
+  if ($(window).width() > 700) {
     $.stratus({
       key: "8f41bb09d7580c54b24f5be783d2b6fb",
       links: "https://soundcloud.com/zedsdead/sets/somewhere-else-ep"
