@@ -28,3 +28,11 @@ footer {
     position: absolute;
     text-align: center;
 }
+
+.parallax-window {
+    min-height: 900px;
+    height: auto;
+    background: transparent;
+    width: 100%;
+}
+
