@@ -23,3 +23,8 @@ footer {
     position: absolute;
     padding-right: 5px;
 }
+
+.top {
+    position: absolute;
+    text-align: center;
+}
