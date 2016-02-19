@@ -142,16 +142,3 @@ var myDoughnutChart = new Chart(ctx3).Doughnut(needs_data, {
         
     
 
-
-/*$(document).ready(function(){
-  var ctx = $('#chart-area').get(0).getContext("2d");
-  var myDoughnut = new Chart(ctx).Doughnut(doughnutData,{
-      animation:true,
-      responsive: true,
-      showTooltips: false,
-      percentageInnerCutout : 70,
-      segmentShowStroke : false,
-    
-  });
-});
-*/
