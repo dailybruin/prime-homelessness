@@ -2,6 +2,20 @@ header {
     text-align: center;
 }
 
+.content {
+    margin: 30px 0px 0px 0px;
+    background-color: rgba(255,255,255, 0.8);
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+
+
+}
+.bigimg {
+    z-index: -1;
+    background: transparent;
+    width: 100%;
+
+}
 .headerimg {
     min-height: 900px;
     background: transparent;
@@ -9,7 +23,7 @@ header {
 }
 
 footer{
-    color: rgba(0,0,0, 0.7);
+    color: rgba(255,255,255, 0.7);
     padding: 8px 0 8px 0;
     font-size: 0.7em;
     clear: both;
@@ -42,7 +56,4 @@ footer{
 
 
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 92695ef17fe0b73cde03dc304a9cb656db859ee1
