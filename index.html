@@ -1,112 +1,133 @@
 <!DOCTYPE html> 
 <html>
 
-<head>
-  <title>Prime Homelessness</title>
+  <head>
+    <title>Prime Homelessness</title>
 
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta http-equiv="X-UA-Compatible"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible"/>
 
-  <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
-  <link rel="stylesheet" type="text/css" href="css/app.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.0/flexslider.min.css">
 
-<body>  
-  <header>
-    <!-- <h1>Prime Homelessness</h1> -->
-    <div class="headerimg" data-parallax="scroll" data-image-src="https://c2.staticflickr.com/8/7291/8729276154_eafbf9a892_b.jpg"></div>
+  </head>
 
-    <div class= "top-right">
-      <a href="http://dailybruin.com">
-        <img src="http://graphics.dailybruin.com/gradissue-2015/30-columns/image/nameplate.png"/>
-      </a>
+  <body>  
+    <header>
+      <!-- <h1>Prime Homelessness</h1> -->
+      <div class="headerimg" data-parallax="scroll" data-image-src="https://c2.staticflickr.com/8/7291/8729276154_eafbf9a892_b.jpg"></div>
+
+      <div class= "top-right">
+        <a href="http://dailybruin.com">
+          <img src="http://graphics.dailybruin.com/gradissue-2015/30-columns/image/nameplate.png"/>
+        </a>
+      </div>
+    </header>
+
+    <div class="row">
+      <div class="large-6 large-centered columns">
+        <!-- TODO: CSS for our own sections -->
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+           cillum dolore eu fugiat nulla paraatur. Excepteur sint occaecat cupidatat non
+           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deserunt veritatis officia incidunt! Eos, quidem error, libero sint harum, deserunt quod aspernatur, neque maxime eveniet ut facere impedit iusto soluta.</p>
+
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quibusdam quo blanditiis laborum aliquid quaerat, tempore totam harum, maxime dolorem excepturi. Modi eveniet vitae ea ab distinctio voluptas. Doloribus, magnam.</p>
+         </div>
+       </div> 
+     </div>
+
+     <div class = "row">
+      <div class="parallax-window" data-parallax="scroll" data-image-src="http://blogs.kcrw.com/whichwayla/wp-content/uploads/2013/02/DSC03196.jpg"></div>
+    </div>      
+
+    <div class="row">
+      <div class="large-6 large-centered columns">
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+           cillum dolore eu fugiat nulla paraatur. Excepteur sint occaecat cupidatat non
+           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deserunt veritatis officia incidunt! Eos, quidem error, libero sint harum, deserunt quod aspernatur, neque maxime eveniet ut facere impedit iusto soluta.</p>
+
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quibusdam quo blanditiis laborum aliquid quaerat, tempore totam harum, maxime dolorem excepturi. Modi eveniet vitae ea ab distinctio voluptas. Doloribus, magnam.</p>
+         </div>
+       </div> 
+     </div>
+
+     <div class = "row">
+      <div class="parallax-window" data-parallax="scroll" data-image-src="http://blogs.kcrw.com/whichwayla/wp-content/uploads/2013/02/DSC03196.jpg"></div>
+    </div>      
+    <!-- Charts -->
+    <canvas id="RaceChart" width="500" height="500"></canvas>
+    <canvas id="GenderChart" width="500" height="500"></canvas>
+    <canvas id="SpecialNeeds" width="500" height="500"></canvas>
+    
+    <div class="row">
+      <div class="large-6 large-centered columns">
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+           cillum dolore eu fugiat nulla paraatur. Excepteur sint occaecat cupidatat non
+           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deserunt veritatis officia incidunt! Eos, quidem error, libero sint harum, deserunt quod aspernatur, neque maxime eveniet ut facere impedit iusto soluta.</p>
+
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quibusdam quo blanditiis laborum aliquid quaerat, tempore totam harum, maxime dolorem excepturi. Modi eveniet vitae ea ab distinctio voluptas. Doloribus, magnam.</p>
+
+
+           <div class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="slide1.jpg" />
+              </li>
+              <li>
+                <img src="slide2.jpg" />
+              </li>
+              <li>
+                <img src="slide3.jpg" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+
+
+      <footer>
+        Page developed by <a href="mailto:cgoh@media.ucla.edu">Christopher Goh</a>, <a href="mailto:ctruong@media.ucla.edu">Cat Truong</a>, <a href="mailto:ashih@media.ucla.edu">Andy Shih</a>, <a href="mailto:kaspinwall@media.ucla.edu">Katie Aspinwall</a>, <a href="mailto:khuynh@media.ucla.edu">Ky-Cuong Huynh</a>, <a href="mailto:cfong@media.ucla.edu">Colin Fong</a>, and <a href="mailto:kxie@media.ucla.edu">Kevin Xie</a>. &copy; 2016 <a href="http://dailybruin.com/">Daily Bruin</a>.
+      </footer>
     </div>
-  </header>
 
-  <div class="row">
-    <div class="large-6 large-centered columns">
-      <!-- TODO: CSS for our own sections -->
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-         cillum dolore eu fugiat nulla paraatur. Excepteur sint occaecat cupidatat non
-         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <!-- Empty div where SoundCloud player will go on mobile -->
+    <div class="small-player">
+    </div>  
 
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deserunt veritatis officia incidunt! Eos, quidem error, libero sint harum, deserunt quod aspernatur, neque maxime eveniet ut facere impedit iusto soluta.</p>
+    <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="js/vendor/what-input.min.js"></script>
+    <script type="text/javascript" src="js/parallax.min.js"></script>
+    <script type="text/javascript" src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <script type="text/javascript" src="js/visuals.js"></script>
+    <!-- The SoundCloud player breaks with newer versions of jQuery -->
+    <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
 
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quibusdam quo blanditiis laborum aliquid quaerat, tempore totam harum, maxime dolorem excepturi. Modi eveniet vitae ea ab distinctio voluptas. Doloribus, magnam.</p>
-      </div>
-    </div> 
-  </div>
-
-  <div class = "row">
-    <div class="parallax-window" data-parallax="scroll" data-image-src="http://blogs.kcrw.com/whichwayla/wp-content/uploads/2013/02/DSC03196.jpg"></div>
-  </div>      
-
-  <div class="row">
-    <div class="large-6 large-centered columns">
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-         cillum dolore eu fugiat nulla paraatur. Excepteur sint occaecat cupidatat non
-         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deserunt veritatis officia incidunt! Eos, quidem error, libero sint harum, deserunt quod aspernatur, neque maxime eveniet ut facere impedit iusto soluta.</p>
-
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quibusdam quo blanditiis laborum aliquid quaerat, tempore totam harum, maxime dolorem excepturi. Modi eveniet vitae ea ab distinctio voluptas. Doloribus, magnam.</p>
-      </div>
-    </div> 
-  </div>
-
-  <div class = "row">
-    <div class="parallax-window" data-parallax="scroll" data-image-src="http://blogs.kcrw.com/whichwayla/wp-content/uploads/2013/02/DSC03196.jpg"></div>
-  </div>      
-  <!-- Charts -->
-  <canvas id="RaceChart" width="500" height="500"></canvas>
-  <canvas id="GenderChart" width="500" height="500"></canvas>
-  <canvas id="SpecialNeeds" width="500" height="500"></canvas>
-  
-  <div class="row">
-    <div class="large-6 large-centered columns">
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-         cillum dolore eu fugiat nulla paraatur. Excepteur sint occaecat cupidatat non
-         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deserunt veritatis officia incidunt! Eos, quidem error, libero sint harum, deserunt quod aspernatur, neque maxime eveniet ut facere impedit iusto soluta.</p>
-
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quibusdam quo blanditiis laborum aliquid quaerat, tempore totam harum, maxime dolorem excepturi. Modi eveniet vitae ea ab distinctio voluptas. Doloribus, magnam.</p>
-      </div>
-    </div> 
-
-    <footer>
-      Page developed by <a href="mailto:cgoh@media.ucla.edu">Christopher Goh</a>, <a href="mailto:ctruong@media.ucla.edu">Cat Truong</a>, <a href="mailto:ashih@media.ucla.edu">Andy Shih</a>, <a href="mailto:kaspinwall@media.ucla.edu">Katie Aspinwall</a>, <a href="mailto:khuynh@media.ucla.edu">Ky-Cuong Huynh</a>, <a href="mailto:cfong@media.ucla.edu">Colin Fong</a>, and <a href="mailto:kxie@media.ucla.edu">Kevin Xie</a>. &copy; 2016 <a href="http://dailybruin.com/">Daily Bruin</a>.
-    </footer>
-  </div>
-
-  <!-- Empty div where SoundCloud player will go on mobile -->
-  <div class="small-player">
-  </div>  
-
-  <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
-  <script type="text/javascript" src="js/vendor/what-input.min.js"></script>
-  <script type="text/javascript" src="js/parallax.min.js"></script>
-  <script type="text/javascript" src="js/foundation.min.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
-  <script type="text/javascript" src="js/visuals.js"></script>
-  <!-- The SoundCloud player breaks with newer versions of jQuery -->
-  <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
-  <script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
-  
-</body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.0/jquery.flexslider.min.js "></script>
+    
+  </body>
 
 </html>
