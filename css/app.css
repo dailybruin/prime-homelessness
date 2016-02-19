@@ -38,13 +38,42 @@ footer{
 }
 
 #contents {
-    padding-top: 20px;
-    padding-left: 10px;
-    background-color: rgba(0,0,0,0.2); /* 10% opaque black bg */
+    /* padding inside box (top right/left bottom)*/
+    padding: 20px 20px 15px;
 
+    /* margins around box */
+    margin-top:15px;
+    margin-left:15px;
+    
+    /* 100% opaque black bg */
+    background-color: rgba(0,0,0,0.8); 
+
+    /* fixed position - move w/ scroll */
     position: fixed;
     top: 0;
-    right: 0;
-    width: 300px;
-    border: 3px solid #73AD21;
+    left: 0;
+
+    width: 225px;
+}
+
+#menu-btn {
+    /* fixed position - move w/ scroll */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* margins around box */
+    margin-top:15px;
+    margin-left:15px;
+
+    /* padding inside box (top right/left bottom)*/
+    padding: 5px;
+
+    /* dimensions */
+    width: 100px;
+    height: 42px;
+    padding: 10px 15px 5px;
+
+    /* 100% opaque black bg */
+    background-color: rgba(0,255,0,0.8); 
 }
