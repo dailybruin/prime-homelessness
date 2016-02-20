@@ -37,9 +37,10 @@ footer{
     width: 100%;
 }
 
+/* table of contents */
 .contents {
     /* padding inside box (top right/left bottom)*/
-    padding: 20px 20px 15px;
+    padding: 40px 20px 15px;
 
     /* margins around box */
     margin-top:15px;
@@ -60,7 +61,7 @@ footer{
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    text-align: center;
+    /*text-align: center;*/
 
     /* fixed position - move w/ scroll */
     position: fixed;
@@ -75,10 +76,10 @@ footer{
     padding: 5px;
 
     /* dimensions */
-    width: 135px;
+    width: 200px;
     height: 42px;
     padding: 10px 15px 5px;
 
     /* 100% opaque black bg */
-    background-color: rgba(0,255,0,0.8); 
+    background-color: rgba(0,255,0,0.0); 
 }
