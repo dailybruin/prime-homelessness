@@ -2,6 +2,12 @@ header {
     text-align: center;
 }
 
+#prime-logo {
+	background-image: url(http://graphics.dailybruin.com/gradissue-2015/30-columns/image/nameplate.png);
+	height: 20px;
+	width: 145px;
+}
+
 .content {
     margin: 30px 0px 0px 0px;
     background-color: rgba(255,255,255, 0.8);
@@ -42,6 +48,18 @@ footer{
 .top {
     position: absolute;
     text-align: center;
+}
+
+.bottom-left {
+	left: 0px;
+	bottom: 0px;
+	position: absolute;
+	padding-left: 5px;
+	padding-bottom: 40px;
+	
+	color: white;
+	font-size: 50px;
+	
 }
 
 .parallax-window {
