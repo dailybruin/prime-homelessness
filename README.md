@@ -3,6 +3,8 @@
 <!-- TODO: Update title for this README -->
 All content &copy; Daily Bruin 2016.
 
+Latest GitHub Pages-hosted [prototype](https://daily-bruin.github.io/prime-homelessness/).
+
 ## Team 
 
 * [Colin Fong](mailto:cfong@media.ucla.edu)
