@@ -24,6 +24,14 @@ header {
     min-height: 900px;
     background: transparent;
     width: 100%;
+    position: relative;
+}
+
+#onlinelogo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 75%;
 }
 
 footer{
