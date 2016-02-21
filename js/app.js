@@ -1,7 +1,3 @@
-$(window).load(function() {
-    $('.flexslider').flexslider();
-});
-
 $(function(){
   if ($(window).width() > 700) {
     $.stratus({

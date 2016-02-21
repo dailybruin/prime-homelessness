@@ -71,33 +71,32 @@
     </div>
 
     <div class="flexslider">
-        <ul class="slides">
-            <li>
-                <img src="img/working_truck.jpg" />
-            </li>
-            <li>
-                <img src="img/student_truck.jpg" />
-            </li>
-            <li>
-                <img src="img/side_truck.jpg" />
-            </li>
-            <li>
-                <img src="img/side_truck_only.jpg" />
-            </li>
-            <li>
-                <img src="img/group_talk.jpg" />
-            </li>
-            <li>
-                <img src="img/big_group_truck.jpg" />
-            </li>
-
-        </ul>
+      <ul class="slides">
+        <li>
+          <img src="img/working_truck.jpg" alt="">
+        </li>
+        <li>
+          <img class="lazy" data-src="img/student_truck.jpg" alt="">
+        </li>
+        <li>
+          <img class="lazy" data-src="img/side_truck.jpg" alt="">
+        </li>
+        <li>
+          <img class="lazy" data-src="img/side_truck_only.jpg" alt="">
+        </li>
+        <li>
+          <img class="lazy" data-src="img/group_talk.jpg" alt="">
+        </li>
+        <li>
+          <img class="lazy" data-src="img/big_group_truck.jpg" alt="">
+        </li>
+      </ul>
     </div>
 
     <!-- Charts -->
-   <canvas id="RaceChart" width="300" height="300" class="vertical"></canvas>
-   <canvas id="GenderChart" width="300" height="300" class="vertical"></canvas>
-   <canvas id="SpecialNeeds" width="300" height="300" class="vertical"></canvas>
+    <canvas id="RaceChart" width="300" height="300" class="vertical"></canvas>
+    <canvas id="GenderChart" width="300" height="300" class="vertical"></canvas>
+    <canvas id="SpecialNeeds" width="300" height="300" class="vertical"></canvas>
 
    <!-- Remainder of story -->
     <div class="row">
@@ -294,5 +293,6 @@
          incompatibilty with parallax.js -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.0/flexslider.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.0/jquery.flexslider.min.js "></script>
+    <script type="text/javascript" src="js/lazy-load.js"></script>
   </body>
 </html>
