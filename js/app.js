@@ -38,12 +38,6 @@ var contents_toggle = function() {
     console.log("Toggling");
     $('.contents').hide();
   });
-
-  $(document).click(function() {
-    console.log("OMg a click");
-  });
-
-  console.log("In toggle function");
 };
 
 $('.contents').hide();
