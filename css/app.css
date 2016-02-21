@@ -11,32 +11,16 @@ header {
     background-color: rgba(255,255,255, 0.8);
     padding: 20px 20px 20px 20px;
     border-radius: 5px;
-
-
 }
-.bigimg {
-    z-index: -1;
-    background: transparent;
-    width: 100%;
 
-}
+/* Header image */
 .headerimg {
     min-height: 900px;
     background: transparent;
     width: 100%;
 }
 
-footer{
-    color: rgba(255,255,255, 0.7);
-    padding: 8px 0 8px 0;
-    font-size: 0.7em;
-    clear: both;
-    border-top: 1px solid rgba(0,0,0, 0.1);
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.top-right {
+.top-right {    
     right: 0px;
     top: 0px;
     position: absolute;
@@ -48,16 +32,22 @@ footer{
     text-align: center;
 }
 
+/*Story credit*/
 .bottom-left {
 	left: 0px;
 	bottom: 0px;
 	position: absolute;
 	padding-left: 5px;
 	padding-bottom: 40px;
-	
 	color: white;
 	font-size: 50px;
-	
+}
+
+/* Skyline background */
+.bigimg {
+    z-index: -1;
+    background: transparent;
+    width: 100%;
 }
 
 .parallax-window {
@@ -67,9 +57,19 @@ footer{
     width: 100%;
 }
 
+/* Charts */
 .vertical {
-    display: block;
-
-
+    display: block; 
 }
+
+footer {
+    color: rgba(255,255,255, 0.7);
+    padding: 8px 0 8px 0;
+    font-size: 0.7em;
+    clear: both;
+    border-top: 1px solid rgba(0,0,0, 0.1);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 
