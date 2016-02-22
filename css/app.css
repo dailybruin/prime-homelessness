@@ -112,14 +112,16 @@ footer{
 /* table of contents */
 .contents {
     /* text properties */
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
-    font-size: 180%;
-    font-weight: 300;
+    font-size: 100%;
+    font-weight: 400;
     z-index: 3;
 
     /* padding inside box (top right/left bottom)*/
-    padding: 0px 0px 0px;
+    /*padding: 0px 0px 0px;*/
+    padding-left: 50px;
+    padding-top: 5px;
 
     /* margins around box */
     margin-top:50px;
@@ -160,6 +162,7 @@ footer{
 
     /* padding inside box (top right/left bottom)*/
     padding: 5px;
+    /*padding-left: 20px;*/
 
     /* dimensions */
     width: 205px;
