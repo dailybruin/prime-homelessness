@@ -17,8 +17,28 @@
   </head>
 
   <body>  
-    
+
     <header>
+    <div class="contents">
+     <!--  <p>
+        <a href="#part0">0</a> 
+        <a href="#part1">1</a> 
+        <a href="#part2">2</a> 
+        <a href="#part3">3</a> 
+        <a href="#part4">4</a> 
+        <a href="#part5">5</a>
+      </p> -->
+      <p><a href="#part0">0: Prologue</a></p>
+      <p><a href="#part1">I: History of homelessness</a></p>
+      <p><a href="#part2">II: A path to recovery</a></p>
+      <p><a href="#part3">III: Taking to the streets</a></p>
+      <p><a href="#part4">IV: The way home</a></p>
+      <p><a href="#part5">V: Epilogue</a></p>
+    </div>
+
+    <div class="contents-btn">
+      <p>CONTENTS</p>
+    </div>
 
       <!-- <h1>Prime Homelessness</h1> -->
       <div class="headerimg" data-parallax="scroll" data-image-src="img/cover.jpg">
@@ -50,7 +70,7 @@
       <div class="large-10 large-centered columns">
 
         <div class="content">
-                <p class="part-title"><strong>Part 0: Prologue</strong></p>
+                <p id="part0" class="part-title"><strong>Part 0: Prologue</strong></p>
 
                 <p>The &quot;city of shanties.&quot; The &quot;home of the homeless.&quot; The &quot;homeless capital&quot; of America.</p>
 
@@ -116,13 +136,13 @@
     <div class="row">
         <div class="large-10 large-centered columns">
             <div class="content">
-                <p class="part-title"><strong>Part I: A very brief history of homelessness in Los Angeles</strong></p>
+                <p id="part1" class="part-title"><strong>Part I: A very brief history of homelessness in Los Angeles</strong></p>
 
                 <p>Understanding homelessness in Los Angeles means understanding the roots of the problem and the way it has developed over the decades.</p>
 
                 <p>During the Great Depression, millions of Midwestern workers lost their jobs, homes and livelihoods. Some packed their things, abandoned their families and rode the railroads west to Los Angeles in search of a fresh start. The migrants, typically young men, eventually settled close to the railroad terminal near downtown Los Angeles. The area, newly christened &ldquo;skid row,&rdquo; began to develop a reputation as a slum.</p>
 
-                <canvas id="GenderChart" width="300" height="300" class = "vertical" style = "float: left;"></canvas>
+                
 
                 <p>The population of skid row grew after World War II, the Korean War and the Vietnam War as veterans settled there. By the 1960s, skid row was notorious as a haven for alcohol- and drug-addicted young men.</p>
 
@@ -153,7 +173,7 @@
 
                 <p>Something&rsquo;s got to give.</p>
 
-                <p class="part-title"><strong>Part II: A path to recovery</strong></p>
+                <p id="part2" class="part-title"><strong>Part II: A path to recovery</strong></p>
 
                 <p>It&rsquo;s common to encounter small shantytowns in the hustle and bustle of Westwood Village. After all, compared to other areas of the city, the Village is relatively safe and well-maintained &ndash; attractive qualities for someone living on the street. An <a href="http://dailybruin.com/2016/02/01/community-members-volunteer-to-count-westwoods-homeless-population/">annual court</a> in February found 33 homeless individuals, vehicles and shelters in the area bordered by Santa Monica Boulevard and the 405 Freeway, up slightly from 27 last year.</p>
 
@@ -186,9 +206,17 @@
 
                 <p>The simple fact is that Los Angeles&rsquo; homelessness problem is Westwood&rsquo;s homelessness problem. And it will persist in Westwood as long as it persists in the rest of the city.</p>
 
-                <canvas id="RaceChart" width="300" height="300" class = "vertical" style = "float: right"></canvas>
+                <canvas id="SpecialNeeds" width="300" height="300" ></canvas>
+                <div id="js-legend-needs" class="chart-legend"></div>
+                
+               
+                <canvas id="RaceChart" width="300" height="300"></canvas>
+                <div id="js-legend-race" class="chart-legend"></div>
+                
+                <canvas id="GenderChart" width="300" height="300"></canvas>
+                <div id="js-legend-gender" class="chart-legend"></div>
 
-                <p class="part-title"><strong>Part III: Students take to the streets</strong></p>
+                <p id="part3" class="part-title"><strong>Part III: Students take to the streets</strong></p>
 
                 <p>There&rsquo;s a board affixed to a wall in the lobby of the Luskin School of Public Affairs Building. Emblazoned on the Plexiglas front is a quote by anthropologist Margaret Mead that reads, &ldquo;Never doubt that a small group of thoughtful committed citizens can change the world; indeed, it&rsquo;s the only thing that ever does.&rdquo;</p>
 
@@ -218,7 +246,7 @@
 
                 <p>But that&rsquo;s not the point. It&rsquo;s unrealistic to expect any student nonprofit to drastically reduce the number of homeless people in a community. These efforts should be thought of as a means to an end &ndash; engaging the general public on homelessness and encouraging them to start paying attention and do something about it.</p>
 
-                <p class="part-title"><strong>Part IV: The way home</strong></p>
+                <p id="part4" class="part-title"><strong>Part IV: The way home</strong></p>
 
                 <p>Quite frankly, there isn't a lot that nonprofit organizations and private charities can do to directly end homelessness. It&rsquo;s simply beyond their scope. So it&rsquo;s up to the city, county and state governments to invest in measures to house the people on the streets.</p>
 
@@ -240,9 +268,6 @@
 
                 <p>It&rsquo;s the best option for those with serious psychiatric disorders who &#8203;find it difficult to access the resources they need from society&#8203; to receive long-term shelter and care. Between 2009 and 2011, the state government cut $587.4 million from its mental health services budget, which funds institutions like psychiatric wards.</p>
 
-                 <canvas id="SpecialNeeds" width="300" height="300" style = "float:left"></canvas>
-
-
                 <p>The cuts were part of a process called &quot;deinstitutionalization,&quot; which sought to release patients from state psychiatric hospitals in order to better integrate them into society and save state money. However, as John Martin <a href="http://www.mentalhealth.com/mag1/p51-sc02.html">said</a> in the Schizophrenia Digest, that experiment has been a massive failure which has left people with serious mental illnesses to fend for themselves.</p>
 
                 <p>The cuts need to be reversed if the state wants to get people with mental illnesses off the streets for good. Extra funding will go a long way toward improving the quality of care provided and oversight to prevent the abuse that can sometimes take place in state psychiatric hospitals.</p>
@@ -263,7 +288,7 @@
 
                 <p>Thomas was right. It doesn&rsquo;t have to happen.</p>
 
-                <p class="part-title"><strong>Part V: Epilogue</strong></p>
+                <p id="part5" class="part-title"><strong>Part V: Epilogue</strong></p>
 
                 <p>I&rsquo;ll admit, I had a pretty jarring bout of writer&rsquo;s block when I started writing this article.</p>
 
@@ -311,6 +336,7 @@
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
     <script type="text/javascript" src="js/visuals.js"></script>
+    <script type="text/javascript" src="src/legend.js"></script>
     <!-- The SoundCloud player breaks with newer versions of jQuery -->
     <script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
 
