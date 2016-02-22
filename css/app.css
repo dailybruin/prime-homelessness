@@ -2,8 +2,35 @@ header {
     text-align: center;
 }
 
+p {
+    font-family: "Lato", sans-serif;
+}
+
+div#graphic-1, div.graphic-3 {
+    float: right;
+    padding-left: 2rem;
+}
+
+div.graphic-2 {
+    float: left;
+    padding-right: 2rem;
+}
+
+@media only screen and (max-width: 40em) { 
+    div#graphic-1, div.graphic-3 {
+        float: none;
+        padding-left: 0rem;
+    }
+
+    div.graphic-2 {
+        float: none;
+        padding-right: 0rem;
+    }
+}
+
 #prime-logo {
 	width: 200px;
+    max-width: 15vw;
 }
 
 .legend .title {
@@ -32,7 +59,7 @@ header {
 
 .content {
     margin: 30px 0 0 0;
-    background-color: rgba(255,255,255, 0.8);
+    background-color: rgba(255,255,255, 0.9);
     padding: 20px 20px 20px 20px;
     border-radius: 5px;
 }
@@ -43,19 +70,17 @@ header {
 }
 
 .credits {
-    right: 0;
-    bottom: 16vh;
+    right: 1rem;
+    bottom: 4rem;
     position: absolute;
-    padding-right: 5px;
-    padding-bottom: 40px;
     color: white;
-    font-size: 32px;
+    font-size: 1.2rem;
+    font-family: "Lato", sans-serif;
 }
 
-/* Tighter fit on mobile devices between title logo and author credits */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 40em) { 
     .credits {
-        bottom: 10vh;
+        font-size: 1rem;
     }
 }
 
@@ -74,8 +99,8 @@ header {
 
 #onlinelogo {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 6rem;
+    right: 1rem;
     width: 75%;
 }
 
@@ -90,10 +115,10 @@ footer{
 }
 
 .top-right {
-    right: 0px;
     top: 0px;
     position: absolute;
     padding-right: 5px;
+    right: 0px;
 }
 
 .top {
