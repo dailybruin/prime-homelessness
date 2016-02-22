@@ -126,7 +126,7 @@ footer{
     margin-left:0px;
     
     /* 100% opaque black bg */
-    background-color: rgba(10,10,10,0.98); 
+    background-color: rgba(10,10,10,0.65); 
 
     /* fixed position - move w/ scroll */
     position: fixed;
@@ -167,7 +167,7 @@ footer{
     padding: 12px 20px 5px;
 
     /* 100% opaque black bg */
-    background-color: rgba(10,10,10,0.98); 
+    background-color: rgba(10,10,10,0.65); 
 }
 
 

@@ -1,7 +1,6 @@
+$('.contents').hide();
 $(window).load(function() {
     $('.flexslider').flexslider();
-    $('.contents').hide();
-
 });
 
 $(function(){
