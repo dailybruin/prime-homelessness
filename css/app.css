@@ -21,7 +21,7 @@ header {
 
 }
 .headerimg {
-    min-height: 900px;
+    min-height: 100vh;
     background: transparent;
     width: 100%;
     position: relative;
