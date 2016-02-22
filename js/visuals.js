@@ -20,11 +20,12 @@ var race_data = [
     {
         value: 1,
         color: "black",
-        highlight: "rgb(0,0,51)",
+        highlight: "rgba(0,0,0, 0.8)",
         label: "Other(Pacific islander, Asian)"
     },
 
 ];
+
 
 var gender_data = [
     {
@@ -70,13 +71,51 @@ var needs_data = [
     }
     
 ];
+Chart.types.Doughnut.extend({
+        name: "DoughnutAlt",
+        draw: function() {
+            Chart.types.Doughnut.prototype.draw.apply(this, arguments);
+            this.chart.ctx.fillStyle = 'black';
+            this.chart.ctx.textAlign = "center";
+            this.chart.ctx.textBaseline = 'middle';
+            this.chart.ctx.font = Chart.helpers.fontString(30, "italic bold", "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif");
+            this.chart.ctx.fillText("Race", this.chart.width / 2 , this.chart.height / 2);
+        }
+    });
+Chart.types.Doughnut.extend({
+        name: "DoughnutAlt1",
+        draw: function() {
+            Chart.types.Doughnut.prototype.draw.apply(this, arguments);
+            this.chart.ctx.fillStyle = 'black';
+            this.chart.ctx.textAlign = "center";
+            this.chart.ctx.textBaseline = 'middle';
+            this.chart.ctx.font = Chart.helpers.fontString(30, "italic bold", "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif");
+            this.chart.ctx.fillText("Gender", this.chart.width / 2 , this.chart.height / 2);
+        }
+    });
+Chart.types.Doughnut.extend({
+        name: "DoughnutAlt2",
+        draw: function() {
+            Chart.types.Doughnut.prototype.draw.apply(this, arguments);
+            this.chart.ctx.fillStyle = 'black';
+            this.chart.ctx.textAlign = "center";
+            this.chart.ctx.textBaseline = 'middle';
+            this.chart.ctx.font = Chart.helpers.fontString(30, "italic bold", "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif");
+            this.chart.ctx.fillText("Social", this.chart.width / 2 , this.chart.height / 2.3);
+            this.chart.ctx.fillText("Needs", this.chart.width / 2 , this.chart.height / 1.7);
+        }
+    });
 
 $(document).ready(function(){
 var ctx1 = $("#RaceChart").get(0).getContext('2d');
-var myDoughnutChart = new Chart(ctx1).Doughnut(race_data, {
-
-	segmentStrokeWidth : 6,
-    onAnimationComplete: function() {
+var myDoughnutChart1 = new Chart(ctx1).DoughnutAlt(race_data, {
+    
+	  segmentShowStroke: false,
+    animateRotate: true,
+    animateScale: false,
+    percentageInnerCutout: 50,
+    tooltipTemplate: "<%if (label){%><%=label %>: <%}%><%= value + '%' %>",
+    /*onAnimationComplete: function() {
       
       var canvasWidth = $('#RaceChart').width();
       var canvasHeight = $('#RaceChart').height();
@@ -89,14 +128,22 @@ var myDoughnutChart = new Chart(ctx1).Doughnut(race_data, {
       
       var txtPosx = Math.round((canvasWidth - textWidth)/2);
       ctx1.fillText(middletext, txtPosx, canvasHeight/2);
-        
-        },
-    });
-var ctx2 = $("#GenderChart").get(0).getContext('2d');
-var myDoughnutChart = new Chart(ctx2).Doughnut(gender_data, {
 
-    segmentStrokeWidth : 6,
-    onAnimationComplete: function() {
+      legend(document.getElementById("js-legend-race"), race_data, myDoughnutChart1, "<%=label%>: <%=value%>%");
+        },
+        */
+       
+    });
+legend(document.getElementById("js-legend-race"), race_data, myDoughnutChart1, "<%=label%>: <%=value%>%");
+var ctx2 = $("#GenderChart").get(0).getContext('2d');
+var myDoughnutChart2 = new Chart(ctx2).DoughnutAlt1(gender_data, {
+    
+    segmentShowStroke: false,
+    animateRotate: true,
+    animateScale: false,
+    percentageInnerCutout: 50,
+    tooltipTemplate: "<%if (label){%><%=label %>: <%}%><%= value + '%' %>",
+    /*onAnimationComplete: function() {
       
       var canvasWidth = $('#RaceChart').width();
       var canvasHeight = $('#RaceChart').height();
@@ -110,13 +157,21 @@ var myDoughnutChart = new Chart(ctx2).Doughnut(gender_data, {
       var txtPosx = Math.round((canvasWidth - textWidth)/2);
       ctx2.fillText(middletext, txtPosx, canvasHeight/2);
         
+      
         },
+        */
     });
-var ctx3 = $("#SpecialNeeds").get(0).getContext('2d');
-var myDoughnutChart = new Chart(ctx3).Doughnut(needs_data, {
+legend(document.getElementById("js-legend-gender"), gender_data, myDoughnutChart2, "<%=label%>: <%=value%>%");
 
-    segmentStrokeWidth : 6,
-    onAnimationComplete: function() {
+var ctx3 = $("#SpecialNeeds").get(0).getContext('2d');
+var myDoughnutChart3 = new Chart(ctx3).DoughnutAlt2(needs_data, {
+    
+    segmentShowStroke: false,
+    animateRotate: true,
+    animateScale: false,
+    percentageInnerCutout: 50,
+    tooltipTemplate: "<%if (label){%><%=label %>: <%}%><%= value + '%' %>",
+    /*onAnimationComplete: function() {
       
       var canvasWidth = $('#RaceChart').width();
       var canvasHeight = $('#RaceChart').height();
@@ -135,8 +190,12 @@ var myDoughnutChart = new Chart(ctx3).Doughnut(needs_data, {
       var txtPosx1 = Math.round((canvasWidth - textWidth2)/2);
       ctx3.fillText(middletext2, txtPosx1, canvasHeight/1.7);
         
+
+      legend(document.getElementById("js-legend-needs"), needs_data, myDoughnutChart3, "<%=label%>: <%=value%>%");
         },
+        */
     });
+legend(document.getElementById("js-legend-needs"), needs_data, myDoughnutChart3, "<%=label%>: <%=value%>%");
 });
     
         

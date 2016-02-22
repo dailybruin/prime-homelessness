@@ -134,7 +134,7 @@
 
                 <p>During the Great Depression, millions of Midwestern workers lost their jobs, homes and livelihoods. Some packed their things, abandoned their families and rode the railroads west to Los Angeles in search of a fresh start. The migrants, typically young men, eventually settled close to the railroad terminal near downtown Los Angeles. The area, newly christened &ldquo;skid row,&rdquo; began to develop a reputation as a slum.</p>
 
-                <canvas id="GenderChart" width="300" height="300" class = "vertical" style = "float: left;"></canvas>
+                
 
                 <p>The population of skid row grew after World War II, the Korean War and the Vietnam War as veterans settled there. By the 1960s, skid row was notorious as a haven for alcohol- and drug-addicted young men.</p>
 
@@ -198,7 +198,15 @@
 
                 <p>The simple fact is that Los Angeles&rsquo; homelessness problem is Westwood&rsquo;s homelessness problem. And it will persist in Westwood as long as it persists in the rest of the city.</p>
 
-                <canvas id="RaceChart" width="300" height="300" class = "vertical" style = "float: right"></canvas>
+                <canvas id="SpecialNeeds" width="300" height="300" ></canvas>
+                <div id="js-legend-needs" class="chart-legend"></div>
+                
+               
+                <canvas id="RaceChart" width="300" height="300"></canvas>
+                <div id="js-legend-race" class="chart-legend"></div>
+                
+                <canvas id="GenderChart" width="300" height="300"></canvas>
+                <div id="js-legend-gender" class="chart-legend"></div>
 
                 <p id="part3" class="part-title"><strong>Part III: Students take to the streets</strong></p>
 
@@ -251,9 +259,6 @@
                 <p>Another big part of the equation is the system of state psychiatric hospitals, which care for people with mental illnesses.</p>
 
                 <p>It&rsquo;s the best option for those with serious psychiatric disorders who &#8203;find it difficult to access the resources they need from society&#8203; to receive long-term shelter and care. Between 2009 and 2011, the state government cut $587.4 million from its mental health services budget, which funds institutions like psychiatric wards.</p>
-
-                 <canvas id="SpecialNeeds" width="300" height="300" style = "float:left"></canvas>
-
 
                 <p>The cuts were part of a process called &quot;deinstitutionalization,&quot; which sought to release patients from state psychiatric hospitals in order to better integrate them into society and save state money. However, as John Martin <a href="http://www.mentalhealth.com/mag1/p51-sc02.html">said</a> in the Schizophrenia Digest, that experiment has been a massive failure which has left people with serious mental illnesses to fend for themselves.</p>
 
@@ -323,6 +328,7 @@
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
     <script type="text/javascript" src="js/visuals.js"></script>
+    <script type="text/javascript" src="src/legend.js"></script>
     <!-- The SoundCloud player breaks with newer versions of jQuery -->
     <script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
 
