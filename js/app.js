@@ -1,21 +1,9 @@
 $(window).load(function() {
     $('.flexslider').flexslider();
+    $('.contents').hide();
 });
 
-var contents_toggle = function() {
-  $('.contents-btn').mouseenter(function() {
-    console.log("Toggling");
-    $('.contents').show();
-  });
 
-  $('.contents').mouseleave(function() {
-    console.log("Toggling");
-    $('.contents').hide();
-  });
-};
-
-$('.contents').hide();
-$(document).ready(contents_toggle);
 
 $(function(){
   if ($(window).width() > 700) {
@@ -27,5 +15,18 @@ $(function(){
   else {
     $('.small-player').append('<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/245490888&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>')
   }
+});
 
+
+
+$(function() {
+  $('.contents-btn').mouseenter(function() {
+    console.log("Toggling");
+    $('.contents').show();
+  });
+
+  $('.contents').mouseleave(function() {
+    console.log("Toggling");
+    $('.contents').hide();
+  });
 });
