@@ -2,8 +2,13 @@ header {
     text-align: center;
 }
 
+p {
+    font-family: "Lato", sans-serif;
+}
+
 #prime-logo {
 	width: 200px;
+    max-width: 15vw;
 }
 
 .flexslider .slides img {
@@ -27,14 +32,18 @@ header {
 }
 
 .credits {
-    right: 0px;
-    bottom: 16vh;
+    right: 1rem;
+    bottom: 4rem;
     position: absolute;
-    padding-right: 5px;
-    padding-bottom: 40px;
     color: white;
-    font-size: 32px;
-    
+    font-size: 1.2rem;
+    font-family: "Lato", sans-serif;
+}
+
+@media only screen and (max-width: 40em) { 
+    .credits {
+        font-size: 1rem;
+    }
 }
 
 .bigimg {
@@ -52,8 +61,8 @@ header {
 
 #onlinelogo {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 6rem;
+    right: 1rem;
     width: 75%;
 }
 
@@ -68,7 +77,6 @@ footer{
 }
 
 .top-right {
-    right: 0px;
     top: 0px;
     position: absolute;
     padding-right: 5px;
