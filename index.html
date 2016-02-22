@@ -65,9 +65,11 @@
       
       
     </header>
-    <div class="bigimg" data-parallax="scroll" data-image-src="img/skyline.jpg">
+    <div class="bigimg" data-parallax="scroll" data-image-src="img/background.jpg" data-speed="0.04">
+    <!-- <div class="background"></div> -->
+    <!-- <img src="img/background.jpg"> -->
     <div class="row">
-      <div class="large-10 large-centered columns">
+      <div class="large-8 large-centered columns">
 
         <div class="content">
                 <p id="part0" class="part-title"><strong>Part 0: Prologue</strong></p>
@@ -105,36 +107,11 @@
         </div> 
     </div>
 
-        <div class="flexslider">
-            <ul class="slides">
-                <li>
-                    <img src="img/working_truck.jpg" />
-                </li>
-                <li>
-                    <img src="img/student_truck.jpg" />
-                </li>
-                <li>
-                    <img src="img/side_truck.jpg" />
-                </li>
-                <li>
-                    <img src="img/side_truck_only.jpg" />
-                </li>
-                <li>
-                    <img src="img/group_talk.jpg" />
-                </li>
-                <li>
-                    <img src="img/big_group_truck.jpg" />
-                </li>
-            </ul>
-        </div>
-
-
-
    
    
     
     <div class="row">
-        <div class="large-10 large-centered columns">
+        <div class="large-8 large-centered columns">
             <div class="content">
                 <p id="part1" class="part-title"><strong>Part I: A very brief history of homelessness in Los Angeles</strong></p>
 
@@ -153,6 +130,12 @@
                 <p>At the same time, frostbitten Easterners were flocking to the Southland, lured by the siren&rsquo;s song of sun, sand and surf &ndash; set to a Beach Boys melody, of course.</p>
 
                 <p>As Southern California&rsquo;s population swelled, so did housing prices. Suddenly, people whose homes on skid row were demolished found themselves on the street &ndash; and with nowhere else to go but outward.</p>
+
+                <div id="graphic-1">
+                    <canvas id="SpecialNeeds" width="300" height="300" ></canvas>
+                    <div id="js-legend-needs" class="chart-legend"></div>
+                </div>
+                
 
                 <p>The problem festered during the 1980s as local hospitals shifted away from serving people with mental illnesses due to shrinking federal funding, forcing them out onto the streets to fend for themselves. By that point, Los Angeles was already known as the &ldquo;homeless capital&quot; of America. Then-Mayor Tom Bradley attempted to rectify the situation by accommodating the growing shantytowns in skid row, along the Los Angeles River and elsewhere in the city. He allowed homeless people to remain on the streets through temporary measures like approving a homeless campground and supporting temporary shelter funds. This weak response allowed homelessness to continue unabated into the 1990s.</p>
 
@@ -173,6 +156,16 @@
 
                 <p>Something&rsquo;s got to give.</p>
 
+
+
+            </div>
+        </div> 
+
+    </div>
+
+    <div class="row">
+        <div class="large-8 large-centered columns">
+            <div class="content">
                 <p id="part2" class="part-title"><strong>Part II: A path to recovery</strong></p>
 
                 <p>It&rsquo;s common to encounter small shantytowns in the hustle and bustle of Westwood Village. After all, compared to other areas of the city, the Village is relatively safe and well-maintained &ndash; attractive qualities for someone living on the street. An <a href="http://dailybruin.com/2016/02/01/community-members-volunteer-to-count-westwoods-homeless-population/">annual court</a> in February found 33 homeless individuals, vehicles and shelters in the area bordered by Santa Monica Boulevard and the 405 Freeway, up slightly from 27 last year.</p>
@@ -205,18 +198,37 @@
                 <p>That can&rsquo;t be pinned on PATH or the BID. They&rsquo;re facing a constant influx of people from around Los Angeles, and PATH can only house a few hundred of them at a time.</p>
 
                 <p>The simple fact is that Los Angeles&rsquo; homelessness problem is Westwood&rsquo;s homelessness problem. And it will persist in Westwood as long as it persists in the rest of the city.</p>
+            </div>
+        </div>
+    </div>
 
-                <canvas id="SpecialNeeds" width="300" height="300" ></canvas>
-                <div id="js-legend-needs" class="chart-legend"></div>
-                
-               
-                <canvas id="RaceChart" width="300" height="300"></canvas>
-                <div id="js-legend-race" class="chart-legend"></div>
-                
-                <canvas id="GenderChart" width="300" height="300"></canvas>
-                <div id="js-legend-gender" class="chart-legend"></div>
-
-                <p id="part3" class="part-title"><strong>Part III: Students take to the streets</strong></p>
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="img/working_truck.jpg" />
+            </li>
+            <li>
+                <img src="img/student_truck.jpg" />
+            </li>
+            <li>
+                <img src="img/side_truck.jpg" />
+            </li>
+            <li>
+                <img src="img/side_truck_only.jpg" />
+            </li>
+            <li>
+                <img src="img/group_talk.jpg" />
+            </li>
+            <li>
+                <img src="img/big_group_truck.jpg" />
+            </li>
+        </ul>
+    </div>
+   
+    <div class="row">
+        <div class="large-8 large-centered columns">
+            <div class="content">
+                 <p id="part3" class="part-title"><strong>Part III: Students take to the streets</strong></p>
 
                 <p>There&rsquo;s a board affixed to a wall in the lobby of the Luskin School of Public Affairs Building. Emblazoned on the Plexiglas front is a quote by anthropologist Margaret Mead that reads, &ldquo;Never doubt that a small group of thoughtful committed citizens can change the world; indeed, it&rsquo;s the only thing that ever does.&rdquo;</p>
 
@@ -232,6 +244,11 @@
 
                 <p>But serving homeless students is only part of Bruin Shelter&rsquo;s goal. Tse envisions it as a platform to involve more students in social justice initiatives. Whether students volunteer at the shelter or not, he wants to instigate a cultural change to alter the prevalent perception of homeless people.</p>
 
+                <div class="graphic-2">
+                    <canvas id="RaceChart" width="300" height="300"></canvas>
+                    <div id="js-legend-race" class="chart-legend"></div>
+                </div>
+
                 <p>Bruin Shelter is just one of several student-run initiatives on campus designed to address homelessness. The Mobile Clinic Project at UCLA works to address health issues faced by homeless individuals, according to undergraduate coordinator Jimmy Zheng. The clinic distributes clothing, hygiene products and glasses, provides insurance counseling, physical therapy and more.</p>
 
                 <p>Like his Bruin Shelter peers, Zheng wants to engage the student body about the issue of homelessness.</p>
@@ -245,8 +262,14 @@
                 <p>There are many other initiatives on campus, but they all have something in common: Due to resource limitations, they&rsquo;re small-scale operations that can&rsquo;t make a big, direct impact on homelessness. Bruin Shelter expects to serve only six to eight students when it opens next year. Mobile Clinic Project simply provides health products and services to homeless individuals.</p>
 
                 <p>But that&rsquo;s not the point. It&rsquo;s unrealistic to expect any student nonprofit to drastically reduce the number of homeless people in a community. These efforts should be thought of as a means to an end &ndash; engaging the general public on homelessness and encouraging them to start paying attention and do something about it.</p>
+            </div>
+        </div> 
+    </div>
 
-                <p id="part4" class="part-title"><strong>Part IV: The way home</strong></p>
+     <div class="row">
+        <div class="large-8 large-centered columns">
+            <div class="content">
+                                <p id="part4" class="part-title"><strong>Part IV: The way home</strong></p>
 
                 <p>Quite frankly, there isn't a lot that nonprofit organizations and private charities can do to directly end homelessness. It&rsquo;s simply beyond their scope. So it&rsquo;s up to the city, county and state governments to invest in measures to house the people on the streets.</p>
 
@@ -265,6 +288,11 @@
                 <p>By contrast, supportive housing is an effective and economical way to serve the homeless population while addressing their complex needs and situations. A 2004 study by the Lewin Group found that permanent housing for a homeless person in New York would cost $41.85 per day, compared to $54.42 for a shelter and $74 for prison.</p>
 
                 <p>Another big part of the equation is the system of state psychiatric hospitals, which care for people with mental illnesses.</p>
+
+                <div class="graphic-3">
+                    <canvas id="GenderChart" width="300" height="300"></canvas>
+                    <div id="js-legend-gender" class="chart-legend"></div>
+                </div>
 
                 <p>It&rsquo;s the best option for those with serious psychiatric disorders who &#8203;find it difficult to access the resources they need from society&#8203; to receive long-term shelter and care. Between 2009 and 2011, the state government cut $587.4 million from its mental health services budget, which funds institutions like psychiatric wards.</p>
 
@@ -287,7 +315,13 @@
                 <p>I thought back to Thomas&rsquo; story about Bob, the man who spent 25 years on the streets of Westwood.</p>
 
                 <p>Thomas was right. It doesn&rsquo;t have to happen.</p>
+            </div>
+        </div> 
+    </div>
 
+     <div class="row">
+        <div class="large-8 large-centered columns">
+            <div class="content">
                 <p id="part5" class="part-title"><strong>Part V: Epilogue</strong></p>
 
                 <p>I&rsquo;ll admit, I had a pretty jarring bout of writer&rsquo;s block when I started writing this article.</p>
@@ -308,7 +342,7 @@
 
                 <p>At 10:40 p.m., I returned to my apartment, sat down at my desk, opened my laptop and deleted everything I had written. Staring at a fresh, blank screen, I began to type.</p>
             </div>
-        </div> 
+        </div>
         <!-- Empty div where SoundCloud player will go on mobile -->
         <div class="small-player">
         </div>  
@@ -317,15 +351,6 @@
         Page developed by <a href="mailto:cgoh@media.ucla.edu">Christopher Goh</a>, <a href="mailto:ctruong@media.ucla.edu">Cat Truong</a>, <a href="mailto:ashih@media.ucla.edu">Andy Shih</a>, <a href="mailto:kaspinwall@media.ucla.edu">Katie Aspinwall</a>, <a href="mailto:khuynh@media.ucla.edu">Ky-Cuong Huynh</a>, <a href="mailto:cfong@media.ucla.edu">Colin Fong</a>, and <a href="mailto:kxie@media.ucla.edu">Kevin Xie</a>. &copy; 2016 <a href="http://dailybruin.com/">Daily Bruin</a>.
         </footer>
     </div>
-
-    <!-- dummy div
-    <div class="row">
-        <div class="large-8 large-centered columns">
-            <div class="content">
-                
-            </div>
-        </div> 
-    </div>-->
 
     <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
     <script type="text/javascript" src="js/vendor/what-input.min.js"></script>
