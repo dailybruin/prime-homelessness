@@ -15,7 +15,7 @@ header {
 }
 
 .content {
-    margin: 30px 0px 0px 0px;
+    margin: 30px 0 0 0;
     background-color: rgba(255,255,255, 0.8);
     padding: 20px 20px 20px 20px;
     border-radius: 5px;
@@ -27,14 +27,20 @@ header {
 }
 
 .credits {
-    right: 0px;
+    right: 0;
     bottom: 16vh;
     position: absolute;
     padding-right: 5px;
     padding-bottom: 40px;
     color: white;
     font-size: 32px;
-    
+}
+
+/* Tighter fit on mobile devices between title logo and author credits */
+@media only screen and (max-width: 1024px) {
+    .credits {
+        bottom: 10vh;
+    }
 }
 
 .bigimg {
